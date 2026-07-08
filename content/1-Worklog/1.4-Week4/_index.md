@@ -1,57 +1,37 @@
 ---
 title: "Week 4 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-05-11
+weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
 ### Week 4 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Master the system migration process between physical/on-premise environments and the AWS cloud.
+* Proficiently practice the AWS VM Import/Export toolkit to migrate virtual machines back and forth.
+* Learn the concepts and basic architecture of Serverless systems on AWS.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| 2 | - Learn & Practice VM Import (Migrating to AWS): <br>&emsp; - Learn: Overview of VM Migration and the configuration file structure of AWS VM Import/Export. <br>&emsp; - Practice: <br>&emsp;&emsp; + Create and export a virtual machine from VMware Workstation on On-premises. <br>&emsp;&emsp; + Upload the VM file to AWS and run the Import command. <br>&emsp;&emsp; + Successfully deploy an Instance from the newly imported AMI. | 05/11/2026 | 05/11/2026 | AWS Study Group |
+| 3 | - Learn & Practice VM Export (Migrating out of AWS): <br>&emsp; - Learn: The process and conditions for exporting a Cloud Instance back to on-premise. <br>&emsp; - Practice: <br>&emsp;&emsp; + Configure S3 bucket ACL permissions to store the export file. <br>&emsp;&emsp; + Practice the VM export command directly from an EC2 Instance and from an AMI. | 05/12/2026 | 05/12/2026 | AWS Study Group |
+| 4 | - Research documentation: <br>&emsp; - Read additional advanced documentation on file size optimization and handling common OS errors encountered after VM Migration. | 05/13/2026 | 05/13/2026 | AWS Study Group |
+| 5 | - Learn Serverless Backend theory: <br>&emsp; - Study the basic theory of Serverless architecture. <br>&emsp; - Learn the role and independent operation of each service: <br>&emsp;&emsp; + Compute: AWS Lambda <br>&emsp;&emsp; + Storage: Amazon S3 <br>&emsp;&emsp; + Database: Amazon DynamoDB | 05/14/2026 | 05/14/2026 | AWS Study Group |
+| 6 | - Learn Serverless system integration: <br>&emsp; - Study the Lambda + S3 + DynamoDB combination model to build a complete serverless backend application. <br>&emsp; - Analyze the Event-driven flows that trigger between services. | 05/15/2026 | 05/15/2026 | AWS Study Group |
 
 ### Week 4 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* **Knowledge:**
+  * Clearly understood the architecture for migrating virtual machine infrastructure back and forth between On-premises and Cloud using VM Import/Export.
+  * Grasped the Serverless system design mindset and the Event-driven architecture model.
 
-* Successfully created and configured an AWS Free Tier account.
+* **Hands-on Practice:**
+  * Successfully packaged, uploaded, and converted the VM structure from VMware into an AMI ready to run on EC2.
+  * Learned how to configure S3 Bucket ACL for secure system data storage and extraction purposes.
+  * Successfully completed all research and hands-on objectives on schedule for the week.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...

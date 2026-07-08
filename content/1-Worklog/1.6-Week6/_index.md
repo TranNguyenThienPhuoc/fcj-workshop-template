@@ -1,57 +1,38 @@
 ---
 title: "Week 6 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-05-25
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
 ### Week 6 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Master the application containerization process using Docker and Docker Compose.
+* Understand and practice enterprise-scale container management and orchestration with Amazon ECS (Elastic Container Service).
+* Implement advanced Deployment strategies (Blue/Green Deployment, Rolling Update) combined with load balancing (ALB) in real-world scenarios.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| 2 | - Learn & Practice Containerization with Docker (P1): <br>&emsp; - Learn: Overview of Docker, Dockerfile, and basic commands. <br>&emsp; - Practice: <br>&emsp;&emsp; + Install Dependencies and run the application in a Local environment. <br>&emsp;&emsp; + Create a Docker Image for the application, deploy it for testing, and verify operation. | 05/25/2026 | 05/25/2026 | AWS Study Group |
+| 3 | - Practice Docker Compose & Push Image (P2): <br>&emsp; - Advanced practice: <br>&emsp;&emsp; + Write a docker-compose.yml file to simultaneously launch multiple containers (Frontend, Backend, Database). <br>&emsp;&emsp; + Verify the integrity and connectivity of the multi-container application. <br>&emsp;&emsp; + Log in and Push the Image to Amazon ECR and Docker Hub registries. | 05/26/2026 | 05/26/2026 | AWS Study Group |
+| 4 | - Research architecture & Prepare ECS environment: <br>&emsp; - Learn: Centralized Container Management and Amazon ECS architecture (Cluster, Task Definition, Service). <br>&emsp; - Practice: Prepare basic network infrastructure: <br>&emsp;&emsp; + Configure Infrastructure settings and create a CodeDeploy Role. <br>&emsp;&emsp; + Add supplementary Subnet, NAT Gateway, Route Table, and Security Group configurations. | 05/27/2026 | 05/27/2026 | AWS Study Group |
+| 5 | - Deploy Amazon ECS - Initialize resources (P1): <br>&emsp; - Practice: <br>&emsp;&emsp; + Register a Namespace in AWS Cloud Map. <br>&emsp;&emsp; + Initialize the ECS Cluster. <br>&emsp;&emsp; + Define operational parameters via ECS Task Definitions (clearly separated Backend task and Frontend task). | 05/28/2026 | 05/28/2026 | AWS Study Group |
+| 6 | - Deploy Amazon ECS - Configure Load Balancer & Service (P2): <br>&emsp; - Practice: <br>&emsp;&emsp; + Configure Application Load Balancer (ALB): Create Target Group and ALB for traffic control. <br>&emsp;&emsp; + Create ECS Services and apply deployment strategies: <br>&emsp;&emsp;&emsp; * Backend: Blue/Green Deployment with automatic Service Scaling. <br>&emsp;&emsp;&emsp; * Frontend: Deploy via Rolling Update mechanism. <br>&emsp;&emsp; + Test system results and perform Clean Up Resources to avoid unnecessary costs. | 05/29/2026 | 05/29/2026 | AWS Study Group |
 
 ### Week 6 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* **Knowledge:**
+  * Deeply understood the Docker containerization mindset, which thoroughly solves the environment consistency problem from Local to Cloud.
+  * Mastered the advanced orchestration architecture of Amazon ECS, clearly distinguishing how Task Definitions and Services operate.
+  * Clearly understood the nature and application scenarios of two popular deployment strategies: Blue/Green Deployment (minimizing downtime) and Rolling Update.
 
-* Successfully created and configured an AWS Free Tier account.
+* **Hands-on Practice:**
+  * Independently wrote Dockerfiles and Docker Compose files, successfully packaging a complete multi-tier application.
+  * Successfully pushed packaged images to reputable Registries (ECR, Docker Hub).
+  * Set up a complete automated distribution system on ECS with an attached ALB load balancer, implemented flexible auto-scaling for the Backend tier, and performed safe rolling updates for the Frontend tier.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...

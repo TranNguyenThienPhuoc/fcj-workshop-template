@@ -1,58 +1,38 @@
----
+﻿---
 title: "Worklog Tuần 6"
-date: 2024-01-01
-weight: 1
+date: 2026-05-25
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
 ### Mục tiêu tuần 6:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Nắm vững quy trình đóng gói ứng dụng (Containerization) sử dụng Docker và Docker Compose.
+* Hiểu và thực hành quản lý, điều phối container quy mô doanh nghiệp với Amazon ECS (Elastic Container Service).
+* Triển khai thực tế các chiến lược Deployment nâng cao (Blue/Green Deployment, Rolling Update) kết hợp cân bằng tải (ALB).
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --------- | ------------ | --------------- | -------------- |
+| 2 | - Tìm hiểu & Thực hành Containerization với Docker (P1): <br>&emsp; - Tìm hiểu: Tổng quan về Docker, Dockerfile và các lệnh cơ bản. <br>&emsp; - Thực hành: <br>&emsp;&emsp; + Cài đặt các thư viện phụ thuộc (Dependencies) và chạy ứng dụng ở môi trường Local. <br>&emsp;&emsp; + Tạo Docker Image cho ứng dụng, triển khai chạy thử và kiểm tra hoạt động (Test Application). | 25/05/2026 | 25/05/2026 | AWS Study Group |
+| 3 | - Thực hành Docker Compose & Push Image (P2): <br>&emsp; - Thực hành nâng cao: <br>&emsp;&emsp; + Viết file docker-compose.yml để khởi chạy đồng thời nhiều container (Frontend, Backend, Database). <br>&emsp;&emsp; + Kiểm tra tính toàn vẹn và kết nối của ứng dụng đa container. <br>&emsp;&emsp; + Đăng nhập và đẩy (Push) sản phẩm Image lên hệ thống lưu trữ Amazon ECR và Docker Hub. | 26/05/2026 | 26/05/2026 | AWS Study Group |
+| 4 | - Nghiên cứu kiến trúc & Chuẩn bị môi trường ECS: <br>&emsp; - Tìm hiểu: Centralized Container Management và kiến trúc Amazon ECS (Cluster, Task Definition, Service). <br>&emsp; - Thực hành: Chuẩn bị hạ tầng mạng cơ bản: <br>&emsp;&emsp; + Thiết lập cấu hình Infrastructure, tạo CodeDeploy Role. <br>&emsp;&emsp; + Cấu hình bổ sung Subnet, NAT Gateway, Route Table và Security Group. | 27/05/2026 | 27/05/2026 | AWS Study Group |
+| 5 | - Triển khai Amazon ECS - Khởi tạo tài nguyên (P1): <br>&emsp; - Thực hành: <br>&emsp;&emsp; + Đăng ký không gian tên định danh (Namespace) trong AWS Cloud Map. <br>&emsp;&emsp; + Khởi tạo cụm máy chủ container ECS Cluster. <br>&emsp;&emsp; + Định nghĩa các thông số vận hành qua ECS Task Definition (chia tách rõ ràng cho Backend task và Frontend task). | 28/05/2026 | 28/05/2026 | AWS Study Group |
+| 6 | - Triển khai Amazon ECS - Cấu hình Load Balancer & Service (P2): <br>&emsp; - Thực hành: <br>&emsp;&emsp; + Cấu hình Application Load Balancer (ALB): Khởi tạo Target Group và ALB kiểm soát luồng traffic. <br>&emsp;&emsp; + Tạo ECS Service và áp dụng các chiến lược phát hành: <br>&emsp;&emsp;&emsp; * Backend: Blue/Green Deployment và cấu hình tự động co giãn (Service Scaling). <br>&emsp;&emsp;&emsp; * Frontend: Deploy theo cơ chế tịnh tiến cuốn chiếu (Rolling Update). <br>&emsp;&emsp; + Kiểm tra kết quả hệ thống (Test Result) và dọn dẹp tài nguyên (Clean Up Resources). | 29/05/2026 | 29/05/2026 | AWS Study Group |
 
 ### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* **Về kiến thức:**
+  * Hiểu sâu sắc tư duy đóng gói ứng dụng bằng Docker giúp giải quyết triệt để bài toán đồng nhất môi trường từ Local lên Cloud.
+  * Nắm vững kiến trúc điều phối nâng cao của Amazon ECS, phân biệt rõ cách thức hoạt động của Task Definition và Service.
+  * Hiểu rõ bản chất và kịch bản áp dụng của hai chiến lược deployment phổ biến: Blue/Green Deployment (giảm thiểu tối đa downtime) và Rolling Update.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* **Về thực hành:**
+  * Tự tay viết Dockerfile, file Docker Compose và đóng gói thành công một ứng dụng đa lớp hoàn chỉnh.
+  * Đẩy thành công mã nguồn đóng gói lên các Registry uy tín (ECR, Docker Hub).
+  * Thiết lập hoàn chỉnh một hệ thống phân phối tự động trên ECS có gắn bộ cân bằng tải ALB, thực hiện cấu hình tự động co giãn tải (Scaling) linh hoạt cho tầng Backend và cập nhật cuốn chiếu an toàn cho tầng Frontend.
 
 

@@ -1,57 +1,37 @@
 ---
 title: "Week 2 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-04-27
+weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 2 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Master advanced network management and connectivity techniques on AWS.
+* Understand how to automate infrastructure deployment and integrate Hybrid Cloud systems.
+* Practice multi-network connectivity through Transit Gateway, VPC Peering, and centralized DNS management.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| 2 | - Learn & Practice Route 53: <br>&emsp; - Learn: Hybrid DNS Management with Amazon Route 53. <br>&emsp; - Practice: <br>&emsp;&emsp; + Create Route 53 Outbound/Inbound Endpoints. <br>&emsp;&emsp; + Set up Resolver Rules and test the results. | 04/27/2026 | 04/27/2026 | AWS Study Group |
+| 3 | - Learn & Practice Transit Gateway (P1): <br>&emsp; - Learn: Centralized Network Management with AWS Transit Gateway. <br>&emsp; - Practice: <br>&emsp;&emsp; + Create Key Pair and initialize CloudFormation Template. <br>&emsp;&emsp; + Create Transit Gateway and Attachments. | 04/28/2026 | 04/28/2026 | AWS Study Group |
+| 4 | - Practice Transit Gateway (P2): <br>&emsp; - Practice: <br>&emsp;&emsp; + Set up Transit Gateway Route Tables. <br>&emsp;&emsp; + Add Transit Gateway Routes to VPC Route Tables. | 04/29/2026 | 04/29/2026 | AWS Study Group |
+| 5 | - Learn & Practice VPC Peering (P1): <br>&emsp; - Learn: Network Integration with VPC Peering. <br>&emsp; - Practice: <br>&emsp;&emsp; + Initialize CloudFormation, create Security Group and EC2. <br>&emsp;&emsp; + Update Network ACL. <br>&emsp;&emsp; + Set up VPC and supporting components. <br>&emsp;&emsp; + Enable network traffic logging (VPC Flow Logs). | 04/30/2026 | 04/30/2026 | AWS Study Group |
+| 6 | - Practice VPC Peering (P2): <br>&emsp; - Practice: <br>&emsp;&emsp; + Create Peering connections between VPCs. <br>&emsp;&emsp; + Enable Cross-Peer DNS for domain name resolution. | 05/01/2026 | 05/01/2026 | AWS Study Group |
 
 ### Week 2 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* **Knowledge:**
+  * Gained a deep understanding of large-scale network architecture using Transit Gateway for centralized management.
+  * Mastered DNS handling in a Hybrid environment using Route 53 Resolver.
+  * Learned how to use CloudFormation to automate infrastructure deployment instead of manual operations.
 
-* Successfully created and configured an AWS Free Tier account.
+* **Hands-on Practice:**
+  * Successfully built a multi-VPC connectivity system using both methods: Peering and Transit Gateway.
+  * Set up a DNS system capable of resolving domain names from Cloud to On-premise and vice versa.
+  * Proficiently performed infrastructure preparation steps (Key Pair, SG, EC2) using pre-built templates.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...

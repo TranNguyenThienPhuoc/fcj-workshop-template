@@ -1,59 +1,34 @@
 ---
 title: "Worklog Tuần 9"
 date: 2024-01-01
-weight: 1
+weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
 ### Mục tiêu tuần 9:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Nghiên cứu chuyên sâu bổ sung cho các thành phần kiến trúc hệ thống.
+* Hoàn thiện và tài liệu hóa sơ đồ kiến trúc hệ thống trực quan, chuyên nghiệp.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Đánh giá lại các nét phác thảo sơ đồ từ tuần trước <br> - Nghiên cứu thêm các dịch vụ bảo mật (IAM, WAF) để đưa vào sơ đồ                                                                 | 15/06/2026   | 15/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Sử dụng công cụ vẽ (Draw.io / AWS Architecture Icons) để lên chi tiết các thành phần <br> - Vẽ luồng dữ liệu (Data flow) giữa các dịch vụ                                                 | 16/06/2026   | 16/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Bổ sung các thành phần liên quan đến giám sát và log (CloudWatch, CloudTrail) vào sơ đồ <br> - Tối ưu hóa layout sơ đồ cho dễ nhìn                                                        | 17/06/2026   | 17/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Xin ý kiến review từ các thành viên khác trong nhóm hoặc mentor <br> - Chỉnh sửa sơ đồ dựa trên feedback nhận được                                                                        | 18/06/2026   | 18/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - Hoàn thiện bản vẽ cuối cùng (Finalize) <br> - Xuất file sơ đồ và viết tài liệu mô tả chi tiết cho từng luồng hoạt động                                                                    | 19/06/2026   | 19/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 9:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Củng cố kiến thức thiết kế hệ thống với các dịch vụ bảo mật và giám sát trên AWS.
+* Sử dụng thành thạo công cụ vẽ sơ đồ kiến trúc.
+* Hoàn thành bản vẽ sơ đồ kiến trúc hệ thống hoàn chỉnh cho dự án với đầy đủ các thành phần, dịch vụ và luồng giao tiếp.
+* Tài liệu hóa thành công sơ đồ để toàn bộ các thành viên trong nhóm có thể dễ dàng nắm bắt và bắt tay vào triển khai.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+### Hình ảnh minh họa
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+![Sơ đồ kiến trúc tuần 9](/images/week9-architecture.png)

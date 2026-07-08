@@ -1,59 +1,38 @@
----
+﻿---
 title: "Worklog Tuần 5"
-date: 2024-01-01
-weight: 1
+date: 2026-05-18
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
 ### Mục tiêu tuần 5:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Làm chủ kiến trúc Serverless Backend thông qua việc xây dựng ứng dụng xử lý ảnh và ghi dữ liệu tự động bằng Lambda, S3, và DynamoDB.
+* Hiểu rõ cơ chế phân quyền bảo mật chuyên sâu cho ứng dụng Serverless bằng các chính sách định danh (IAM Policy).
+* Tìm hiểu giải pháp tối ưu hóa hiệu năng ứng dụng bằng bộ nhớ đệm phân tán mã nguồn mở qua Amazon ElastiCache.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --------- | ------------ | --------------- | -------------- |
+| 2 | - Tìm hiểu & Thực hành Serverless (Phần 1 - AWS Lambda & S3): <br>&emsp; - Tìm hiểu: Cơ chế kích hoạt theo sự kiện (Event-driven) khi có tệp tải lên S3. <br>&emsp; - Thực hành: <br>&emsp;&emsp; + Khởi tạo một hàm AWS Lambda đảm nhận vai trò xử lý ảnh (Image Resizing). <br>&emsp;&emsp; + Tạo cấu trúc lưu trữ dữ liệu bằng S3 Bucket. <br>&emsp;&emsp; + Thiết lập chính sách quyền truy cập chuyên sâu (IAM Policy) dành riêng cho hàm Lambda. <br>&emsp;&emsp; + Thực hiện chạy thử nghiệm và kiểm tra tính ổn định của hàm Lambda. | 18/05/2026 | 18/05/2026 | AWS Study Group |
+| 3 | - Tìm hiểu & Thực hành Serverless (Phần 2 - Amazon DynamoDB): <br>&emsp; - Tìm hiểu: Mô hình lưu trữ dữ liệu dạng NoSQL và cách tương tác dữ liệu không máy chủ. <br>&emsp; - Thực hành: <br>&emsp;&emsp; + Thiết lập cấu hình và khởi tạo một bảng cơ sở dữ liệu (DynamoDB Table). <br>&emsp;&emsp; + Lập trình/Cấu hình để hàm Lambda tự động ghi nhận nhật ký hoặc siêu dữ liệu vào bảng DynamoDB khi có sự kiện xử lý. | 19/05/2026 | 19/05/2026 | AWS Study Group |
+| 4 | - Nghiên cứu & Tối ưu ứng dụng: <br>&emsp; - Đọc tài liệu, rà soát lại toàn bộ luồng hoạt động tích hợp của Serverless Backend. <br>&emsp; - Kiểm tra lỗi thực thi (Debug), tối ưu thời gian phản hồi (Timeout) và lượng RAM phân phối cho hàm Lambda. | 20/05/2026 | 20/05/2026 | AWS Study Group |
+| 5 | - Tìm hiểu Amazon ElastiCache (Phần 1): <br>&emsp; - Tìm hiểu: Khái niệm In-Memory Caching (Bộ nhớ đệm trong bộ nhớ RAM). <br>&emsp; - Tìm hiểu: Tổng quan về dịch vụ Amazon ElastiCache và hai engine phổ biến là Redis / Memcached. <br>&emsp; - Phân tích các chiến lược lưu bộ nhớ đệm (Caching Strategies) để tăng tốc truy vấn dữ liệu từ Database. | 21/05/2026 | 21/05/2026 | AWS Study Group |
+| 6 | - Tìm hiểu nâng cao Amazon ElastiCache (Phần 2): <br>&emsp; - Tìm hiểu: Cách thiết lập Cluster, nhân bản dữ liệu (Replication) và đảm bảo tính sẵn sàng cao cho ElastiCache. <br>&emsp; - Nghiên cứu các mô hình kiến trúc thực tế kết hợp giữa Serverless Backend, Database truyền thống và lớp Caching. | 22/05/2026 | 22/05/2026 | AWS Study Group |
 
 ### Kết quả đạt được tuần 5:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* **Về kiến thức:**
+  * Nắm trọn vẹn luồng đi của dữ liệu trong mô hình hướng sự kiện: S3 (Trigger) → Lambda (Process) → DynamoDB (Store).
+  * Hiểu cách thắt chặt an toàn hệ thống bằng IAM Policy chi tiết đến từng hành động (Action) và tài nguyên (Resource).
+  * Nắm vững lý thuyết về In-Memory Caching để giải quyết bài toán nghẽn cổ chai dữ liệu (Database Bottleneck).
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* **Về thực hành:**
+  * Tự tay xây dựng hoàn chỉnh hệ thống xử lý ảnh tự động quy mô nhỏ hoàn toàn trên môi trường Serverless.
+  * Thực hiện thành thạo thao tác tạo bảng, thiết lập khóa và ghi log dữ liệu tự động vào DynamoDB.
+  * Hoàn thành tốt tất cả các bài Lab thực hành chuyên sâu theo tiến độ đề ra của lộ trình FCAJ.
 
 

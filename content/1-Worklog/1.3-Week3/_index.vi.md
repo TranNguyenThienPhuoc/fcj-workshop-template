@@ -1,59 +1,38 @@
----
+﻿---
 title: "Worklog Tuần 3"
-date: 2024-01-01
-weight: 1
+date: 2026-05-04
+weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
 ### Mục tiêu tuần 3:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Nắm vững các dịch vụ lưu trữ cốt lõi trên AWS, tập trung vào Amazon S3 và Storage Gateway.
+* Hiểu và triển khai các phương án bảo vệ dữ liệu tự động với AWS Backup.
+* Triển khai thực tế website tĩnh và tối ưu hóa tốc độ truy cập toàn cầu bằng CloudFront.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --------- | ------------ | --------------- | -------------- |
+| 2 | - Tìm hiểu & Thực hành AWS Backup: <br>&emsp; - Tìm hiểu: Cơ chế Data Protection và lập kế hoạch sao lưu tự động. <br>&emsp; - Thực hành: <br>&emsp;&emsp; + Tạo S3 Bucket làm nguồn và triển khai hạ tầng. <br>&emsp;&emsp; + Tạo Backup plan, thiết lập thông báo và kiểm tra hoạt động. | 04/05/2026 | 04/05/2026 | AWS Study Group |
+| 3 | - Tìm hiểu & Thực hành Amazon S3: <br>&emsp; - Tìm hiểu: Các đặc tính của Object Storage và Static Website Hosting. | 05/05/2026 | 05/05/2026 | AWS Study Group |
+| 4 | - Thực hành Amazon S3 & CloudFront: <br>&emsp;&emsp; + Tạo S3 bucket và tải dữ liệu website. <br>&emsp;&emsp; + Bật tính năng static website và cấu hình Public Access. <br>&emsp;&emsp; + Cấu hình chặn truy cập công cộng vào S3 để bảo mật. <br>&emsp;&emsp; + Tăng tốc website qua CloudFront và kiểm tra phân phối. <br>&emsp;&emsp; + Thực hành Bucket Versioning và sao chép Object sang region khác. | 06/05/2026 | 06/05/2026 | AWS Study Group |
+| 5 | - Tìm hiểu AWS Storage Gateway: <br>&emsp; - Tìm hiểu: Giải pháp Hybrid Storage kết nối On-premise và Cloud. <br>&emsp; - Thực hành: <br>&emsp;&emsp; + Khởi tạo dịch vụ Storage Gateway. <br>&emsp;&emsp; + Thiết lập cấu hình ban đầu cho Gateway. | 07/05/2026 | 07/05/2026 | AWS Study Group |
+| 6 | - Thực hành AWS Storage Gateway: <br>&emsp; - Thực hành: <br>&emsp;&emsp; + Tạo các File Shares trên Cloud. <br>&emsp;&emsp; + Thực hiện kết nối File Shares tại máy On-premise (giả lập) để đồng bộ dữ liệu. | 08/05/2026 | 08/05/2026 | AWS Study Group |
 
 ### Kết quả đạt được tuần 3:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* **Về kiến thức:**
+  * Hiểu rõ quy trình bảo vệ dữ liệu tập trung với AWS Backup giúp giảm thiểu rủi ro mất mát dữ liệu.
+  * Nắm vững cách triển khai kiến trúc S3 + CloudFront để tối ưu chi phí và hiệu suất cho website tĩnh.
+  * Phân biệt được các loại hình lưu trữ lai thông qua Storage Gateway.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* **Về thực hành:**
+  * Đã xây dựng thành công hệ thống website tĩnh có tính bảo mật cao (chặn Public S3 và chỉ cho phép qua CloudFront).
+  * Triển khai thành công việc sao lưu và đồng bộ hóa dữ liệu giữa môi trường tại chỗ và đám mây.
+  * Hoàn thành tốt chuỗi các bài Lab thực hành về Storage trong lộ trình FCAJ.
 
 

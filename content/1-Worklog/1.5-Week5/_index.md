@@ -1,57 +1,37 @@
 ---
 title: "Week 5 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-05-18
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 5 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Master the Serverless Backend architecture by building an automated image processing and data logging application using Lambda, S3, and DynamoDB.
+* Deeply understand the advanced security permission mechanism for Serverless applications using IAM Policies.
+* Explore application performance optimization solutions using distributed open-source in-memory caching via Amazon ElastiCache.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| 2 | - Learn & Practice Serverless (Part 1 - AWS Lambda & S3): <br>&emsp; - Learn: Event-driven trigger mechanism when a file is uploaded to S3. <br>&emsp; - Practice: <br>&emsp;&emsp; + Initialize an AWS Lambda function for Image Resizing. <br>&emsp;&emsp; + Create data storage structure using an S3 Bucket. <br>&emsp;&emsp; + Set up advanced access permission policies (IAM Policy) specifically for the Lambda function. <br>&emsp;&emsp; + Run tests and verify the stability of the Lambda function. | 05/18/2026 | 05/18/2026 | AWS Study Group |
+| 3 | - Learn & Practice Serverless (Part 2 - Amazon DynamoDB): <br>&emsp; - Learn: NoSQL data storage model and serverless data interaction. <br>&emsp; - Practice: <br>&emsp;&emsp; + Configure and initialize a DynamoDB Table. <br>&emsp;&emsp; + Program/configure the Lambda function to automatically log metadata into the DynamoDB table upon a processing event. | 05/19/2026 | 05/19/2026 | AWS Study Group |
+| 4 | - Research & Optimize the application: <br>&emsp; - Read documentation and review the complete integrated workflow of the Serverless Backend. <br>&emsp; - Debug execution errors, optimize Timeout settings and RAM allocation for the Lambda function. | 05/20/2026 | 05/20/2026 | AWS Study Group |
+| 5 | - Learn Amazon ElastiCache (Part 1): <br>&emsp; - Learn: In-Memory Caching concept. <br>&emsp; - Learn: Overview of Amazon ElastiCache service and its two popular engines: Redis / Memcached. <br>&emsp; - Analyze Caching Strategies to speed up database queries. | 05/21/2026 | 05/21/2026 | AWS Study Group |
+| 6 | - Advanced Amazon ElastiCache (Part 2): <br>&emsp; - Learn: How to set up Clusters, data Replication, and ensure high availability for ElastiCache. <br>&emsp; - Research real-world architecture models combining Serverless Backend, traditional Database, and a Caching layer. | 05/22/2026 | 05/22/2026 | AWS Study Group |
 
 ### Week 5 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* **Knowledge:**
+  * Fully grasped the data flow in the event-driven model: S3 (Trigger) → Lambda (Process) → DynamoDB (Store).
+  * Understood how to tighten system security using IAM Policies detailed down to each Action and Resource.
+  * Mastered the theory of In-Memory Caching to solve the Database Bottleneck problem.
 
-* Successfully created and configured an AWS Free Tier account.
+* **Hands-on Practice:**
+  * Independently built a complete small-scale automated image processing system entirely on a Serverless environment.
+  * Proficiently performed table creation, key setup, and automated data logging into DynamoDB.
+  * Successfully completed all in-depth hands-on Lab exercises on schedule within the FCAJ learning path.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...

@@ -1,59 +1,37 @@
 ---
 title: "Worklog Tuần 2"
-date: 2024-01-01
-weight: 1
+date: 2026-04-27
+weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 2:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Nắm vững các kỹ thuật quản lý và kết nối mạng nâng cao trên AWS.
+* Hiểu cách triển khai hạ tầng tự động và tích hợp hệ thống Hybrid Cloud.
+* Thực hành kết nối đa mạng thông qua Transit Gateway, VPC Peering và quản lý DNS tập trung.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --------- | ------------ | --------------- | -------------- |
+| 2 | - Tìm hiểu & Thực hành Route 53: <br>&emsp; - Tìm hiểu: Hybrid DNS Management với Amazon Route 53. <br>&emsp; - Thực hành: <br>&emsp;&emsp; + Tạo Route 53 Outbound/Inbound Endpoint. <br>&emsp;&emsp; + Thiết lập Resolver Rules và Test kết quả. | 27/04/2026 | 27/04/2026 | AWS Study Group |
+| 3 | - Tìm hiểu & Thực hành Transit Gateway (P1): <br>&emsp; - Tìm hiểu: Centralized Network Management với AWS Transit Gateway. <br>&emsp; - Thực hành: <br>&emsp;&emsp; + Tạo Key Pair và khởi tạo CloudFormation Template. <br>&emsp;&emsp; + Tạo Transit Gateway và Attachments. | 28/04/2026 | 28/04/2026 | AWS Study Group |
+| 4 | - Thực hành Transit Gateway (P2): <br>&emsp; - Thực hành: <br>&emsp;&emsp; + Thiết lập Transit Gateway Route Tables. <br>&emsp;&emsp; + Thêm Transit Gateway Routes vào VPC Route Tables. | 29/04/2026 | 29/04/2026 | AWS Study Group |
+| 5 | - Tìm hiểu & Thực hành VPC Peering (P1): <br>&emsp; - Tìm hiểu: Network Integration với VPC Peering. <br>&emsp; - Thực hành: <br>&emsp;&emsp; + Khởi tạo CloudFormation, tạo Security Group và EC2. <br>&emsp;&emsp; + Cập nhật Network ACL. <br>&emsp;&emsp; + Thiết lập VPC và các thành phần phụ trợ. <br>&emsp;&emsp; + Kích hoạt ghi log lưu lượng mạng (VPC Flow Logs). | 30/04/2026 | 30/04/2026 | AWS Study Group |
+| 6 | - Thực hành VPC Peering (P2): <br>&emsp; - Thực hành: <br>&emsp;&emsp; + Tạo kết nối Peering giữa các VPC. <br>&emsp;&emsp; + Kích hoạt Cross-Peer DNS để phân giải tên miền. | 01/05/2026 | 01/05/2026 | AWS Study Group |
 
 ### Kết quả đạt được tuần 2:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* **Về kiến thức:**
+  * Hiểu sâu về kiến trúc mạng quy mô lớn bằng cách sử dụng Transit Gateway để quản lý tập trung.
+  * Nắm vững cách thức xử lý DNS trong môi trường lai (Hybrid) bằng Route 53 Resolver.
+  * Biết cách sử dụng CloudFormation để tự động hóa việc triển khai hạ tầng thay vì thao tác tay.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* **Về thực hành:**
+  * Xây dựng thành công hệ thống kết nối đa VPC thông qua cả hai phương thức: Peering và Transit Gateway.
+  * Thiết lập được hệ thống DNS có khả năng phân giải tên miền từ Cloud về On-premise và ngược lại.
+  * Thực hiện thành thạo các bước chuẩn bị hạ tầng (Key Pair, SG, EC2) thông qua các kịch bản mẫu có sẵn.
 
 
