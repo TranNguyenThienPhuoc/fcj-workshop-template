@@ -31,4 +31,4 @@ pre: " <b> 1.9. </b> "
 
 ### Hình ảnh minh họa
 
-![Sơ đồ kiến trúc tuần 9](/images/week9-architecture.png)
+![Sơ đồ kiến trúc tuần 9](/images/1-Worklog/week9-architecture.png)

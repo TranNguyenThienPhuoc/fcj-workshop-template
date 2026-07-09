@@ -68,14 +68,33 @@ The project was developed over 12 weeks through 4 main phases:
 - *Phase 4 (Weeks 11-12)*: Finalizing CI/CD, Event-Driven SES, PayOS payment, and Caching optimization.
 
 ### 6. Budget Estimation
-*Infrastructure Costs (Optimized for MVP)*
-- *Compute*: EC2/ECS ~ flexible based on traffic.
-- *Database*: DynamoDB On-demand (PAY_PER_REQUEST) ~ cost-optimized for read/write capacity.
-- *Caching*: Small ElastiCache Redis node ~ low fixed cost.
-- *Storage*: S3 Standard & CloudFront Free Tier ~ highly cost-effective.
-- *Email*: Amazon SES ~ generous free tier limits.
 
-*Assessment*: The operational cost for the MVP phase is very low due to Serverless and On-demand pricing models.
+### Infrastructure Costs (MVP Environment)
+
+| Service | Configuration | Estimated Cost/Month |
+|---------|----------|-----------------------:|
+| Amazon EC2 | 2 × t3.micro (ECS Cluster) | ~$16 – $18 |
+| Amazon EBS | 2 × 30 GB gp3 | ~$5 |
+| Amazon NAT Gateway | 1 NAT Gateway | ~$33 – $38 |
+| Application Load Balancer (ALB) | 1 ALB + low traffic | ~$16 – $20 |
+| Amazon DynamoDB | On-Demand (PAY_PER_REQUEST) | ~$1 – $5 |
+| Amazon S3 | Frontend + Upload Images (~20 GB) | ~$0.5 – $1 |
+| Amazon CloudFront | Traffic <100 GB | ~$1 – $3 |
+| Amazon ECR | Docker Images storage | <$1 |
+| Amazon Route 53 | 1 Hosted Zone | ~$0.50 |
+| AWS Certificate Manager (ACM) | SSL/TLS Certificate | Free |
+| Amazon Cognito | <50,000 MAU | Free |
+| Amazon CloudWatch | Basic Logs & Metrics | ~$1 – $3 |
+| AWS CloudTrail | 1 Trail (Management Events) | Free |
+| Amazon ElastiCache (Valkey) | cache.t4g.micro | ~$10 – $13 |
+| Amazon SES | ~1,000 emails/month | <$1 |
+| Amazon SNS | Low notifications | <$1 |
+
+### Total Estimated Cost
+
+| Environment | Cost/Month |
+|------------|--------------:|
+| MVP        | **~$85 – $110** |
 
 ### 7. Risk Assessment
 *Risk Matrix*

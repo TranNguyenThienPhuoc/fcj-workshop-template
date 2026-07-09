@@ -106,5 +106,5 @@ pre: " <b> 4.2. </b> "
 - Participating in LotusHacks was a thrilling and incredibly fun ("have fun") experience. The team experienced burnout near pitch time but successfully overcame it at crucial turning points to successfully deliver the product.
 
 #### Some event photos
-![Event 2](/images/4-EventParticipated/Event2.jpg)
+![Event 2](/images/4-EventParticipated/Even2.jpg)
 > Overall, the event provided an immense amount of rich and specialized knowledge alongside practical application. It not only provided tools but also reshaped my mindset toward design thinking, teamwork, and maximizing the power of AI/Cloud in actual work.

@@ -107,5 +107,5 @@ pre: " <b> 4.2. </b> "
 - Một trải nghiệm kịch tính nhưng vô cùng thú vị ("have fun") tại LotusHacks. Đội ngũ đã trải qua cảm giác kiệt sức cận giờ Pitching (Burnout near pitch time) nhưng đã cùng nhau vượt qua ở những bước ngoặt quyết định để đưa sản phẩm về đích thành công.
 
 #### Một số hình ảnh khi tham gia sự kiện
-![Event 2](/images/4-EventParticipated/Event2.jpg)
+![Event 2](/images/4-EventParticipated/Even2.jpg)
 > Tổng kết lại, sự kiện mang đến khối lượng kiến thức đồ sộ từ kỹ thuật chuyên sâu đến thực hành thực tiễn. Không chỉ bổ sung công cụ, chuỗi sự kiện còn giúp định hình lại tư duy thiết kế, làm việc nhóm và khai thác tối đa sức mạnh của AI/Cloud vào công việc thực tế.

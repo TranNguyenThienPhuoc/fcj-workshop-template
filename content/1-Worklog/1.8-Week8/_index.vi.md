@@ -31,4 +31,4 @@ pre: " <b> 1.8. </b> "
 
 ### Hình ảnh minh họa
 
-![Sơ đồ kiến trúc tuần 8](/images/week8-architecture.jpg)
+![Sơ đồ kiến trúc tuần 8](/images/1-Worklog/week8-architecture.jpg)

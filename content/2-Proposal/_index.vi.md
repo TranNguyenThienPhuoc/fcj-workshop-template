@@ -6,7 +6,6 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-Tại phần này, bạn cần tóm tắt các nội dung trong workshop mà bạn **dự tính** sẽ làm.
 
 # Nền tảng Thương mại Điện tử E-commer (Serverless E-commerce Platform)
 ## Hệ thống mua sắm trực tuyến kiến trúc Enterprise trên nền tảng AWS
@@ -62,32 +61,59 @@ Dự án được phát triển trong vòng 12 tuần với 4 giai đoạn chín
 - *Hạ tầng*: Setup hoàn chỉnh GitHub Actions để tự động build image lên ECR và deploy ECS.
 
 ### 5. Lộ trình & Mốc triển khai
-- *Giai đoạn 1: Nền tảng Cloud cơ bản (Tuần 1 - 4)*
-  - Tuần 1: Làm quen với AWS và các dịch vụ cơ bản.
-  - Tuần 2: Tìm hiểu Điện toán đám mây với EC2 & Mạng VPC.
-  - Tuần 3: Quản lý lưu trữ S3 & Phân quyền bảo mật IAM.
-  - Tuần 4: Cơ sở dữ liệu đám mây & Phân phối nội dung (CloudFront).
-- *Giai đoạn 2: Phát triển Ứng dụng (Tuần 5 - 7)*
-  - Tuần 5: Kiến trúc Serverless Backend (Lambda, DynamoDB, API Gateway).
-  - Tuần 6: Đóng gói ứng dụng với Docker & Điều phối bằng Amazon ECS.
-  - Tuần 7: Frontend Development & User Authentication với Amazon Cognito.
-- *Giai đoạn 3: Thiết kế Kiến trúc (Tuần 8 - 9)*
-  - Tuần 8: Nguyên lý AWS Well-Architected Framework & Phân tích hệ thống.
-  - Tuần 9: Thiết kế và Tài liệu hóa Sơ đồ Kiến trúc Hệ thống E-commerce.
-- *Giai đoạn 4: Triển khai & Hoàn thiện Production (Tuần 10 - 12)*
-  - Tuần 10: Thiết lập Cơ sở hạ tầng thực tế & Lập trình Module cốt lõi.
-  - Tuần 11: Hoàn thiện CI/CD, Tên miền, Bảo mật & Event-Driven (SNS/SES).
-  - Tuần 12: Tối ưu Caching (Redis), Tích hợp thanh toán PayOS & Báo cáo tổng kết dự án.
 
-### 6. Ước tính ngân sách
-*Chi phí hạ tầng (Tối ưu cho giai đoạn đầu)*
-- *Compute*: EC2/ECS ~ linh hoạt theo lưu lượng.
-- *Database*: DynamoDB On-demand (PAY_PER_REQUEST) ~ tối ưu chi phí theo lượt đọc/ghi.
-- *Caching*: ElastiCache Redis node nhỏ ~ chi phí cố định thấp.
-- *Lưu trữ*: S3 Standard & CloudFront Free Tier ~ rất rẻ.
-- *Email*: Amazon SES (sandbox/production) ~ miễn phí giới hạn hàng tháng.
+- **Giai đoạn 1: Xây dựng Hạ tầng AWS**
+  - Thiết kế hạ tầng mạng với Amazon VPC, Public/Private Subnets, Internet Gateway, NAT Gateway và Route Tables.
+  - Quản lý phân quyền với AWS IAM và cấu hình Security Groups.
+  - Tạo Bucket Amazon S3 để lưu trữ Frontend tĩnh và hình ảnh sản phẩm.
 
-*Đánh giá*: Chi phí vận hành giai đoạn MVP rất thấp nhờ tận dụng Serverless và On-demand pricing.
+- **Giai đoạn 2: Triển khai Ứng dụng E-commerce**
+  - Đóng gói ứng dụng bằng Docker và lưu trữ Image trên Amazon ECR.
+  - Triển khai Frontend và Backend bằng Amazon ECS (EC2 Launch Type).
+  - Cấu hình Auto Scaling Group, Capacity Provider và Application Load Balancer (ALB).
+  - Xây dựng cơ sở dữ liệu với Amazon DynamoDB và xác thực người dùng bằng Amazon Cognito.
+
+- **Giai đoạn 3: Phân phối & Bảo mật Hệ thống**
+  - Đăng ký tên miền và quản lý DNS bằng Amazon Route 53.
+  - Cấu hình HTTPS với AWS Certificate Manager (ACM).
+  - Phân phối nội dung thông qua Amazon CloudFront.
+  - Bảo vệ ứng dụng bằng AWS WAF và các chính sách bảo mật của AWS.
+
+- **Giai đoạn 4: Vận hành & Hoàn thiện Production**
+  - Thiết lập quy trình CI/CD với GitHub Actions.
+  - Giám sát hệ thống bằng Amazon CloudWatch và AWS CloudTrail.
+  - Tối ưu hiệu năng với Amazon ElastiCache (Redis).
+  - Tích hợp thanh toán PayOS và dịch vụ gửi Email/SMS bằng Amazon SES và Amazon SNS.
+  - Kiểm thử, tối ưu hiệu năng và hoàn thiện hệ thống E-commerce trên môi trường Production.
+
+## 6. Ước tính ngân sách
+
+### Chi phí hạ tầng (Môi trường MVP)
+
+| Dịch vụ | Cấu hình | Chi phí ước tính/tháng |
+|---------|----------|-----------------------:|
+| Amazon EC2 | 2 × t3.micro (ECS Cluster) | ~16 – 18 USD |
+| Amazon EBS | 2 × 30 GB gp3 | ~5 USD |
+| Amazon NAT Gateway | 1 NAT Gateway | ~33 – 38 USD |
+| Application Load Balancer (ALB) | 1 ALB + lưu lượng thấp | ~16 – 20 USD |
+| Amazon DynamoDB | On-Demand (PAY_PER_REQUEST) | ~1 – 5 USD |
+| Amazon S3 | Frontend + Upload Images (~20 GB) | ~0.5 – 1 USD |
+| Amazon CloudFront | Lưu lượng <100 GB | ~1 – 3 USD |
+| Amazon ECR | Lưu trữ Docker Images | <1 USD |
+| Amazon Route 53 | 1 Hosted Zone | ~0.50 USD |
+| AWS Certificate Manager (ACM) | SSL/TLS Certificate | Miễn phí |
+| Amazon Cognito | <50.000 MAU | Miễn phí |
+| Amazon CloudWatch | Logs & Metrics cơ bản | ~1 – 3 USD |
+| AWS CloudTrail | 1 Trail (Management Events) | Miễn phí |
+| Amazon ElastiCache (Valkey) | cache.t4g.micro | ~10 – 13 USD |
+| Amazon SES | ~1.000 email/tháng | <1 USD |
+| Amazon SNS | Thông báo ít | <1 USD |
+
+### Tổng chi phí ước tính
+
+| Môi trường | Chi phí/tháng |
+|------------|--------------:|
+| MVP        | **~85 – 110 USD** |
 
 ### 7. Đánh giá rủi ro
 *Ma trận rủi ro*

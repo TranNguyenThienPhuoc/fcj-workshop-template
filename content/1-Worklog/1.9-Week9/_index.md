@@ -31,4 +31,4 @@ pre: " <b> 1.9. </b> "
 
 ### Illustration
 
-![Week 9 Architecture Diagram](/images/week9-architecture.png)
+![Week 9 Architecture Diagram](/images/1-Worklog/week9-architecture.png)

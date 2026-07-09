@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Week 8 Worklog"
 date: 2024-01-01
 weight: 8
@@ -31,4 +31,4 @@ pre: " <b> 1.8. </b> "
 
 ### Illustration
 
-![Week 8 Architecture Diagram](/images/week8-architecture.jpg)
+![Week 8 Architecture Diagram](/images/1-Worklog/week8-architecture.jpg)

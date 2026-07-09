@@ -110,6 +110,10 @@ Tham gia **"FCAJ Community Day"** là một trải nghiệm thực sự khác bi
 - Demo **Prompt Optimizer** trên kiến trúc Serverless AWS cho thấy cách biến một ý tưởng đơn giản thành sản phẩm thực sự với các dịch vụ cloud hiện đại.
 - Phương pháp **BMX** mở ra cách nhìn mới về việc tổ chức công việc với AI — không phải "hỏi AI một câu", mà là "xây dựng một quy trình AI".
 
+#### Kết nối cộng đồng
+
+- Không khí sự kiện tạo ra một **không gian an toàn để chia sẻ** — các bạn trẻ mạnh dạn đặt câu hỏi, đưa ra góc nhìn cá nhân mà không sợ bị phán xét.
+- Việc gặp gỡ những người có cùng đam mê công nghệ và chung hành trình học AWS/AI tiếp thêm rất nhiều động lực để tiếp tục cố gắng.
 
 #### Bài học rút ra
 
