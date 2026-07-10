@@ -9,6 +9,8 @@ pre: " <b> 5. </b> "
 # Serverless E-commerce Platform
 ## Enterprise-scale Online Shopping System Architecture on AWS
 
+👉 **[View Live Demo here](https://zopee.xyz/)**
+
 #### Overview
 
 Welcome to the **Serverless E-commerce System** deployment workshop on AWS! This is not just a standard tutorial, but a comprehensive journey that simulates the deployment of an Enterprise-level software system in a real-world environment.

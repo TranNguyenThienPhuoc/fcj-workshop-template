@@ -77,7 +77,7 @@ If the Bucket Policy already grants access to CloudFront (s3:GetObject), no furt
 
 ### 3. Access your E-commerce Website!
 1. Go back to the **General** tab of your CloudFront Distribution.
-2. You will see the **Distribution domain name** (e.g., `d123...cloudfront.net`).
+2. You will see the **Distribution domain name** [d16a8wyekyi0cq.cloudfront.net](https://d16a8wyekyi0cq.cloudfront.net).
 3. The status (Last modified) will initially show as *Deploying*. Be patient and wait about 3-5 minutes.
 4. Once deployment is complete, copy that domain name, paste it into your browser, and enjoy your highly secure and blazing-fast E-commerce website!
 

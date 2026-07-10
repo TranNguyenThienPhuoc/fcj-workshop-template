@@ -77,7 +77,7 @@ Nếu Bucket Policy đã chứa quyền cho CloudFront (s3:GetObject) thì khôn
 
 ### 3. Truy cập trang web E-commerce của bạn!
 1. Quay lại tab **General** của CloudFront Distribution.
-2. Bạn sẽ thấy mục **Distribution domain name** (có dạng `d123...cloudfront.net`).
+2. Bạn sẽ thấy mục **Distribution domain name** [d16a8wyekyi0cq.cloudfront.net](https://d16a8wyekyi0cq.cloudfront.net).
 3. Trạng thái (Last modified) ban đầu sẽ là *Deploying*. Hãy kiên nhẫn đợi khoảng 3-5 phút.
 4. Khi trạng thái hoàn tất, hãy copy link domain name đó, dán vào trình duyệt và chiêm ngưỡng thành quả trang web E-commerce cực kỳ bảo mật và tốc độ cao của bạn!
 

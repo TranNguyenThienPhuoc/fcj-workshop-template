@@ -8,6 +8,9 @@ pre: " <b> 5. </b> "
 
 # Nền tảng Thương mại Điện tử E-commer (Serverless E-commerce Platform)
 ## Hệ thống mua sắm trực tuyến kiến trúc Enterprise trên nền tảng AWS
+
+👉 **[Xem Live Demo tại đây](https://zopee.xyz/)**
+
 #### Tổng quan
 
 Chào mừng bạn đến với Workshop triển khai **Hệ thống Thương mại Điện tử (E-commerce Serverless)** trên nền tảng AWS! Đây không chỉ là một bài hướng dẫn thông thường, mà là một hành trình mô phỏng chính xác quy trình triển khai hệ thống phần mềm cấp độ doanh nghiệp (Enterprise) trong môi trường thực tế.
