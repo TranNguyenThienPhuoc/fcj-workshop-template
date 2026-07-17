@@ -72,7 +72,7 @@ Used to store product images or user avatars uploaded and processed by the Backe
 ![Upload image](/images/5-Workshop/5.3-database-storage/S3Fe_static1.png)
 
 **Bucket 2: Frontend Static Bucket (Example: `my-app-fe-static`)**
-Used to store the static source code of the Frontend (React/Next.js) after it has been built (the `dist/client/*` directory).
+Used to store the static source code of the Frontend (React + Vite + Bun) after it has been built (the `dist/client/*` directory).
 
 **Note when choosing Global namespace**:
 

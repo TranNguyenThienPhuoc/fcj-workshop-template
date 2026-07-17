@@ -31,7 +31,7 @@ The system is divided into 5 main architectural layers. Here is a summary of the
 | | **AWS Certificate Manager (ACM)** | Provides free SSL certificates for HTTPS encryption. |
 | | **Amazon Route 53** | DNS service (if using custom domains). |
 | **Storage & Database** | **Amazon DynamoDB** | Ultra-fast NoSQL database storing 13 data tables (User, Product, Order...). |
-| | **Amazon S3** | Stores static Frontend source code (React/Next.js) and media assets. |
+| | **Amazon S3** | Stores static Frontend source code (React + Vite + Bun) and media assets. |
 | **Compute & Backend** | **Amazon ECR** | Container registry storing Backend Docker Images. |
 | | **Amazon ECS (Fargate)** | Runs Backend Containers entirely Serverless (no server management). |
 | | **Application Load Balancer** | Distributes user traffic across ECS Tasks. |

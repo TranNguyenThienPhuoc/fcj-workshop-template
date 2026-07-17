@@ -29,7 +29,7 @@ Hệ thống được chia thành 5 nhóm kiến trúc chính. Dưới đây là
 | | **AWS Certificate Manager (ACM)** | Cung cấp chứng chỉ SSL miễn phí mã hóa HTTPS. |
 | | **Amazon Route 53** | Dịch vụ DNS (nếu có sử dụng tên miền tùy chỉnh). |
 | **Lưu trữ & Dữ liệu** | **Amazon DynamoDB** | Database NoSQL siêu tốc lưu trữ 13 bảng dữ liệu (User, Product, Order...). |
-| | **Amazon S3** | Lưu trữ mã nguồn Frontend (React/Next.js) và tài nguyên hình ảnh. |
+| | **Amazon S3** | Lưu trữ mã nguồn Frontend (React + Vite + Bun) và tài nguyên hình ảnh. |
 | **Máy tính & Xử lý** | **Amazon ECR** | Kho lưu trữ các Docker Image chứa mã nguồn Backend. |
 | | **Amazon ECS (Fargate)** | Vận hành Backend Container hoàn toàn Serverless (không quản lý máy chủ). |
 | | **Application Load Balancer** | Phân tải lượng truy cập từ người dùng vào các ECS Task. |

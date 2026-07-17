@@ -72,7 +72,7 @@ Dùng để chứa hình ảnh sản phẩm hoặc avatar người dùng do Back
 ![Upload image](/images/5-Workshop/5.3-database-storage/S3Fe_static1.png)
 
 **Bucket 2: Bucket chứa Frontend (Ví dụ: `my-app-fe-static`)**
-Dùng để chứa bộ mã nguồn tĩnh của Frontend (React/Next.js) sau khi đã build (thư mục `dist/client/*`).
+Dùng để chứa bộ mã nguồn tĩnh của Frontend (React + Vite + Bun) sau khi đã build (thư mục `dist/client/*`).
 
 **Lưu ý khi chọn Global namespace**:
 
