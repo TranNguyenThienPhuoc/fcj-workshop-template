@@ -57,8 +57,8 @@ The project was developed over 12 weeks through 4 main phases:
 4. *Optimization & Automation*: Deploying the CI/CD pipeline, integrating Redis caching, configuring SSL/Domains, and the Event-driven SES system.
 
 *Technical Requirements*
-- *Frontend*: React/Next.js integrating Cognito SDK and PayOS Checkout.
-- *Backend*: Node.js/Express or Python containerized with Docker, optimized for async processing.
+- *Frontend*: React + Vite + Bun integrating Cognito SDK and PayOS Checkout.
+- *Backend*: Node.js + Hono containerized with Docker, optimized for async processing.
 - *Infrastructure*: Complete GitHub Actions setup to automatically build images to ECR and deploy to ECS.
 
 ### 5. Timeline & Milestones

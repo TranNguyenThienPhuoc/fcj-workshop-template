@@ -56,8 +56,8 @@ Dự án được phát triển trong vòng 12 tuần với 4 giai đoạn chín
 4. *Tối ưu & Tự động hóa*: Triển khai CI/CD pipeline, tích hợp Redis Caching, cấu hình SSL/Domain và hệ thống Event-driven SES.
 
 *Yêu cầu kỹ thuật*
-- *Frontend*: React/Next.js tích hợp SDK của Cognito và PayOS Checkout.
-- *Backend*: Node.js/Express hoặc Python đóng gói Docker, tối ưu hóa xử lý bất đồng bộ.
+- *Frontend*: React + Vite + Bun tích hợp SDK của Cognito và PayOS Checkout.
+- *Backend*: Node.js + Hono đóng gói Docker, tối ưu hóa xử lý bất đồng bộ.
 - *Hạ tầng*: Setup hoàn chỉnh GitHub Actions để tự động build image lên ECR và deploy ECS.
 
 ### 5. Lộ trình & Mốc triển khai
