@@ -8,6 +8,8 @@ pre: " <b> 3.2. </b> "
 
 # Web Search on Amazon Bedrock AgentCore: AI Agents Can Now Browse the Web Without Data Leaving AWS
 
+* [Facebook Post](https://www.facebook.com/groups/660548818043427/?multi_permalinks=2208651549899805&ref=share)
+
 ![Web Search on Amazon Bedrock](/images/3-BlogsPosted/Blog2.0.jpg)
 
 ![Web Search on Amazon Bedrock](/images/3-BlogsPosted/Blog2.1.jpg)

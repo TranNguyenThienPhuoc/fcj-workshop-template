@@ -8,6 +8,8 @@ pre: " <b> 3.2. </b> "
 
 # Web Search Trên Amazon Bedrock AgentCore: AI Agent Giờ Đã Tự Tra Cứu Được Web Mà Dữ Liệu Không Rời Khỏi AWS
 
+* [Bài viết trên Facebook](https://www.facebook.com/groups/660548818043427/?multi_permalinks=2208651549899805&ref=share)
+
 ![Web Search on Amazon Bedrock](/images/3-BlogsPosted/Blog2.0.jpg)
 
 ![Web Search on Amazon Bedrock](/images/3-BlogsPosted/Blog2.1.jpg)
@@ -60,6 +62,6 @@ Web Search trên Amazon Bedrock AgentCore là bước tiến quan trọng giúp 
 
 Hy vọng những tóm tắt này giúp các bạn có cái nhìn nhanh về hướng đi của AWS trong mảng Agentic AI!
 
-**Nguồn tham khảo:**
+**Nguồn tham khảo:*
 * [Announcing web search on Amazon Bedrock AgentCore: Ground your AI agents in current, accurate web knowledge](https://aws.amazon.com/blogs/aws/announcing-web-search-on-amazon-bedrock-agentcore-ground-your-ai-agents-in-current-accurate-web-knowledge/)
 * [New in Amazon Bedrock AgentCore: Build agents with broader knowledge and continuous learning](https://aws.amazon.com/blogs/machine-learning/new-in-amazon-bedrock-agentcore-build-agents-with-broader-knowledge-and-continuous-learning/)

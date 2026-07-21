@@ -10,6 +10,8 @@ pre: " <b> 3.1. </b> "
 
 ![Amazon VPC Encryption Controls](/images/3-BlogsPosted/Blog1.jpg)
 
+- [Bài viết trên Facebook](https://www.facebook.com/groups/660548818043427/?multi_permalinks=2174928693272091&ref=share)
+
 Trong các hệ thống doanh nghiệp hiện đại, việc mã hóa dữ liệu khi truyền tải (*encryption in transit*) là một yêu cầu quan trọng để đáp ứng các tiêu chuẩn bảo mật như **HIPAA**, **PCI DSS**, **FedRAMP** hay **SOC 2**. Tuy nhiên, khi hạ tầng AWS phát triển với hàng trăm hoặc hàng nghìn tài nguyên, việc xác định lưu lượng nào đang được mã hóa và tài nguyên nào vẫn truyền dữ liệu dưới dạng *plaintext* trở nên rất khó khăn.
 
 Để giải quyết bài toán này, AWS đã giới thiệu **Amazon VPC Encryption Controls** – một tính năng mới giúp doanh nghiệp giám sát, kiểm soát và thực thi việc mã hóa dữ liệu khi truyền tải giữa các tài nguyên AWS trong cùng hoặc giữa nhiều VPC trong một Region.

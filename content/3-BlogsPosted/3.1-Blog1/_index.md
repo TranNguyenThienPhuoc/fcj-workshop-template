@@ -8,6 +8,8 @@ pre: " <b> 3.1. </b> "
 
 # Cloud Security With Amazon VPC Encryption Controls
 
+- [Facebook Post](https://www.facebook.com/groups/660548818043427/?multi_permalinks=2174928693272091&ref=share)
+
 ![Amazon VPC Encryption Controls](/images/3-BlogsPosted/Blog1.jpg)
 
 In modern enterprise systems, encrypting data in transit (*encryption in transit*) is a critical requirement to meet security standards such as **HIPAA**, **PCI DSS**, **FedRAMP**, and **SOC 2**. However, as AWS infrastructure grows to include hundreds or thousands of resources, determining which traffic is encrypted and which resources are still transmitting data in *plaintext* becomes extremely difficult.
